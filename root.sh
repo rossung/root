@@ -11,7 +11,7 @@ read -p "Tolong Input Password Baru Buat User Root : " Pass
 
 # Starting Changes To Root
 rm -f /etc/ssh/sshd_config
-wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/Sangarya/root/main/sshd
+wget -O /etc/ssh/sshd_config https://raw.githubusercontent.com/rossung/root/main/sshd
 echo -e "$Pass\n$Pass\n"|passwd root &> /dev/null
 IPANDA=$(wget -qO- ifconfig.co);
 
